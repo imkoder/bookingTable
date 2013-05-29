@@ -1,0 +1,65 @@
+#bookings {
+    padding-top: 60px;
+}
+
+    #bookings tbody td > * {
+        opacity: 1;
+        height: auto;
+        max-height: 50px;
+        -moz-transition: all 1s linear;
+        -o-transition: all 1s linear;
+        -webkit-transition: all 1s linear;
+        transition: all 1s linear;
+        display: block;
+        overflow: hidden;
+    }
+
+    #bookings .new td {
+        padding-top: 0;
+        padding-bottom: 0;
+        -moz-transition: all 1s linear;
+        -o-transition: all 1s linear;
+        -webkit-transition: all 1s linear;
+        transition: all 1s linear;
+    }
+
+        #bookings .new td > * {
+            opacity: 0;
+            height: 0;
+            max-height: 1px;
+        }
+
+    #bookings td {
+        vertical-align: middle;
+    }
+
+    #bookings .rem {
+        text-align: center;
+    }
+
+.rem a:hover {
+    text-decoration: none;
+}
+
+.btn-primary {
+    margin-right: 15px;
+}
+
+.switch {
+    width: 100%;
+}
+
+input:required ~ i {
+    display: none;
+    margin-left: 3px;
+}
+
+input:required:invalid ~ i.err, input:focus:invalid ~ i.err {
+    display: inline-block;
+    color: #E9322D;
+}
+
+input:required:valid ~ i.ok {
+    display: inline-block;
+    color: green;
+}
